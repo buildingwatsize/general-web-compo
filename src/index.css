@@ -1,0 +1,12 @@
+#root {
+  min-height: 100vh;
+  font-family: 'promptregular', sans-serif;
+}
+
+@font-face {
+  font-family: 'promptregular';
+  src: url('/fonts/prompt-regular-webfont.woff2') format('woff2'),
+       url('/fonts/prompt-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,5 @@
+export const TOKEN = "act"
+export const EMPLOYEE_ID = "eid"
+export const EMPLOYEE_NAME = "emn"
+export const EMPLOYEE_POSITION_LEVEL = "elv"
+export const EMPLOYEE_POSITION_NAME = "epn"

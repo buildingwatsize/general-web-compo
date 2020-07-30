@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  YOUR_APP_NAME:
+    container_name: YOUR_APP_NAME
+    image: bluecurve.int.baac.or.th/YOUR_APP_NAME/YOUR_APP_NAME:${TAG}
+    ports:
+      - 80:80
