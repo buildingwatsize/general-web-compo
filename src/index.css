@@ -1,10 +1,75 @@
 #root {
   min-height: 100vh;
-  font-family: 'promptregular', sans-serif;
+  /* font-family: 'supermarket', sans-serif;
+  font-family: 'Anuphan', sans-serif; */
+  font-family: 'IBMPlexSansThai', sans-serif;
+  /* font-family: 'baac', sans-serif; */
+  /* font-family: 'prompt', sans-serif; */
+  font-weight: 200;
 }
 
 @font-face {
-  font-family: 'promptregular';
+  font-family: 'supermarket';
+  src: url('/fonts/supermarket.woff2') format('woff2'),
+       url('/fonts/supermarket.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anuphan';
+  src: url('/fonts/Anuphan-ExtraLight.woff2') format('woff2'),
+       url('/fonts/Anuphan-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anuphan';
+  src: url('/fonts/Anuphan-Regular.woff2') format('woff2'),
+       url('/fonts/Anuphan-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansThai';
+  src: url('/fonts/IBMPlexSansThai-Light.woff2') format('woff2'),
+       url('/fonts/IBMPlexSansThai-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansThai';
+  src: url('/fonts/IBMPlexSansThai-Regular.woff2') format('woff2'),
+       url('/fonts/IBMPlexSansThai-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'baac';
+  src: url('/fonts/baac-regular-webfont.woff2') format('woff2'),
+       url('/fonts/baac-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'baac';
+  src: url('/fonts/baac-bold-webfont.woff') format('woff2'),
+       url('/fonts/baac-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'prompt';
   src: url('/fonts/prompt-regular-webfont.woff2') format('woff2'),
        url('/fonts/prompt-regular-webfont.woff') format('woff');
   font-weight: normal;
