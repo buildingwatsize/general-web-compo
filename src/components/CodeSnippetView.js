@@ -15,7 +15,7 @@ function CodeSnippetView({ value = "", lang = "javascript" }) {
         minLines={18}
         maxLines={18}
         value={value}
-        style={{zIndex: -1}}
+        style={{ zIndex: 0 }}
       />
     </>
   )
