@@ -55,6 +55,11 @@ const textStyles = {
   transform: "translate(-50%, -50%)"
 }
 
+const loadingProps = {
+  size: "large",
+  color: "#fff"
+}
+
 const randomIntFunc = (maxVal = 1) => {
   let buf = new Uint8Array(1)
   try {
@@ -74,43 +79,43 @@ class OverlayLoading extends Component {
     const { active, moreStyles, moreTextStyles, loadingNumber, loadingText } = this.props
     const randNo = randomIntFunc(30) | 0;
     const listOfLoading = [
-      <BabelLoading size="large" color="#fff" />,
-      <BlockLoading size="large" color="#fff" />,
-      <BlockReserveLoading size="large" color="#fff" />,
-      <BoxLoading size="large" color="#fff" />,
-      <CircleLoading size="large" color="#fff" />,
-      <CircleToBlockLoading size="large" color="#fff" />,
-      <CommonLoading size="large" color="#fff" />,
-      <DisappearedLoading size="large" color="#fff" />,
-      <LoopCircleLoading size="large" color="#fff" />,
-      <NineCellLoading size="large" color="#fff" />,
-      <TouchBallLoading size="large" color="#fff" />,
-      <TransverseLoading size="large" color="#fff" />,
-      <WaveLoading size="large" color="#fff" />,
-      <WaveTopBottomLoading size="large" color="#fff" />,
-      <WindMillLoading size="large" color="#fff" />,
-      <JumpCircleLoading size="large" color="#fff" />,
-      <MeteorRainLoading size="large" color="#fff" />,
-      <RotateCircleLoading size="large" color="#fff" />,
-      <StickyBallLoading size="large" color="#fff" />,
-      <SemipolarLoading size="large" color="#fff" />,
-      <SolarSystemLoading size="large" color="#fff" />,
-      <LadderLoading size="large" color="#fff" />,
-      <HeartBoomLoading size="large" color="#fff" />,
-      <RollBoxLoading size="large" color="#fff" />,
-      <RectGraduallyShowLoading size="large" color="#fff" />,
-      <PointSpreadLoading size="large" color="#fff" />,
-      <ThreeHorseLoading size="large" color="#fff" />,
-      <PassThrouthLoading size="large" color="#fff" />,
-      <CoffeeLoading size="large" color="#fff" />,
-      <BatteryLoading size="large" color="#fff" />,
+      <BabelLoading {...loadingProps} />,
+      <BlockLoading {...loadingProps} />,
+      <BlockReserveLoading {...loadingProps} />,
+      <BoxLoading {...loadingProps} />,
+      <CircleLoading {...loadingProps} />,
+      <CircleToBlockLoading {...loadingProps} />,
+      <CommonLoading {...loadingProps} />,
+      <DisappearedLoading {...loadingProps} />,
+      <LoopCircleLoading {...loadingProps} />,
+      <NineCellLoading {...loadingProps} />,
+      <TouchBallLoading {...loadingProps} />,
+      <TransverseLoading {...loadingProps} />,
+      <WaveLoading {...loadingProps} />,
+      <WaveTopBottomLoading {...loadingProps} />,
+      <WindMillLoading {...loadingProps} />,
+      <JumpCircleLoading {...loadingProps} />,
+      <MeteorRainLoading {...loadingProps} />,
+      <RotateCircleLoading {...loadingProps} />,
+      <StickyBallLoading {...loadingProps} />,
+      <SemipolarLoading {...loadingProps} />,
+      <SolarSystemLoading {...loadingProps} />,
+      <LadderLoading {...loadingProps} />,
+      <HeartBoomLoading {...loadingProps} />,
+      <RollBoxLoading {...loadingProps} />,
+      <RectGraduallyShowLoading {...loadingProps} />,
+      <PointSpreadLoading {...loadingProps} />,
+      <ThreeHorseLoading {...loadingProps} />,
+      <PassThrouthLoading {...loadingProps} />,
+      <CoffeeLoading {...loadingProps} />,
+      <BatteryLoading {...loadingProps} />,
     ]
     return (
       <>
         {active ?
-          <div style={{ ...styles, ...moreStyles }}>
+          <div data-testid="frame" style={{ ...styles, ...moreStyles }}>
             {listOfLoading[loadingNumber >= 0 ? loadingNumber : randNo]}
-            <span style={{ ...textStyles, ...moreTextStyles }}>{loadingText || "รอสักครู่"}</span>
+            <span data-testid="loadingFont" style={{ ...textStyles, ...moreTextStyles }}>{loadingText || "รอสักครู่"}</span>
           </div> : ""}
       </>
     )

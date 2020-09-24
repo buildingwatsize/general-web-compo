@@ -32,13 +32,12 @@ const FontBlock = ({ fontName = "" }) => {
 }
 
 function FontView() {
+  const fontList = ["supermarket", "Anuphan", "IBMPlexSansThai", "baac", "prompt"]
   return (
     <div>
-      <FontBlock fontName="supermarket" />
-      <FontBlock fontName="Anuphan" />
-      <FontBlock fontName="IBMPlexSansThai" />
-      <FontBlock fontName="baac" />
-      <FontBlock fontName="prompt" />
+      {fontList.map(el =>
+        <FontBlock key={el} fontName={el} />
+      )}
     </div>
   )
 }
